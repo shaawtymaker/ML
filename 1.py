@@ -10,11 +10,11 @@ def find_s_algorithm(data):
         if target[i] == "Yes": 
             hypothesis = attributes[i].copy()
         break
-        for i in range(len(target)):
-            if target[i] == "Yes":
-                for j in range(len(hypothesis)):
-                    if hypothesis[j] != attributes[i][j]:
-                        hypothesis[j] = '?' 
+    for i in range(len(target)):
+        if target[i] == "Yes":
+            for j in range(len(hypothesis)):
+                if hypothesis[j] != attributes[i][j]:
+                    hypothesis[j] = '?' 
 
     return hypothesis
 
