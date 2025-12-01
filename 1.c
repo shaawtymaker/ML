@@ -13,4 +13,4 @@ while(!(U0LSR & 0X20));
 U0THR=*msg;
 msg++;
 }
-}
+}   
